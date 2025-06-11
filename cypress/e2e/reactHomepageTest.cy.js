@@ -45,7 +45,13 @@ describe('React.dev UI Tests', () => {
   });
 
   it('allows keyboard navigation (accessibility)', () => {
-  cy.get('body').tab();
-  cy.focused().should('exist');
-});
+    cy.get('body').tab();
+    cy.focused().should('exist');
+  });
+
+  it('searches using keyboard Enter', () => {
+    homepage.openSearch();
+    homepage.typeInSearch('custom hook{Enter}');
+  });
+
 });
