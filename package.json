@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/AdiSchiff/TestingChallenge#readme",
   "devDependencies": {
-    "cypress": "^14.4.1"
+    "cypress": "^14.4.1",
+    "cypress-plugin-tab": "^1.0.5"
   }
 }

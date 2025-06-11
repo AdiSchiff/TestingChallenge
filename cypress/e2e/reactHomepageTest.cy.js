@@ -43,4 +43,9 @@ describe('React.dev UI Tests', () => {
     homepage.clickLearnReact();
     homepage.clickReactLogo();
   });
+
+  it('allows keyboard navigation (accessibility)', () => {
+  cy.get('body').tab();
+  cy.focused().should('exist');
+});
 });
